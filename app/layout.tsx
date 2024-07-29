@@ -6,6 +6,7 @@ import { GeistMono } from "geist/font/mono";
 import { Footer } from "@/components/footer";
 import "./globals.css";
 import { inject } from '@vercel/analytics';
+import { Analytics } from "@vercel/analytics/react"
 export const metadata: Metadata = {
   title: "Arihant's Blog",
   metadataBase: new URL("https://blog.arihant.us"),
@@ -30,6 +31,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+           <Analytics />
           <Navbar />
           <main className="sm:container mx-auto w-[85vw] h-auto">
             {children}
