@@ -5,14 +5,14 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Footer } from "@/components/footer";
 import "./globals.css";
-
+import { inject } from '@vercel/analytics';
 export const metadata: Metadata = {
   title: "Docs stater template",
   metadataBase: new URL("https://docstemplate.vercel.app/"),
   description:
     "This comprehensive documentation template, crafted with Next.js and available as open-source, delivers a sleek and responsive design, tailored to meet all your project documentation requirements.",
 };
-
+inject();
 export default function RootLayout({
   children,
 }: Readonly<{
