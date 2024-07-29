@@ -30,9 +30,11 @@ export default function Home() {
        Buy me a coffee
         </Link>
       </div>
+      <Link href="https://arihant.us">
       <span className="flex flex-row items-center gap-2 text-zinc-400 text-md mt-7 -mb-12 max-[800px]:mb-12">
         <TerminalIcon className="w-4 h-4 mr-1" /> Visit arihant.us
       </span>
+      </Link>
     </div>
   );
 }

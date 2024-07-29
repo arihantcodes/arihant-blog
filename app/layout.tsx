@@ -7,10 +7,10 @@ import { Footer } from "@/components/footer";
 import "./globals.css";
 import { inject } from '@vercel/analytics';
 export const metadata: Metadata = {
-  title: "Docs stater template",
-  metadataBase: new URL("https://docstemplate.vercel.app/"),
+  title: "Arihant's Blog",
+  metadataBase: new URL("https://blog.arihant.us"),
   description:
-    "This comprehensive documentation template, crafted with Next.js and available as open-source, delivers a sleek and responsive design, tailored to meet all your project documentation requirements.",
+    "From Code to Cloud: A Comprehensive Guide to Modern Web Development Mastery",
 };
 inject();
 export default function RootLayout({
