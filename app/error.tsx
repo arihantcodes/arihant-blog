@@ -16,9 +16,9 @@ export default function Error({
   }, [error]);
 
   return (
-    <div className="min-h-[99vh] px-2 py-8 flex flex-col gap-3 items-start">
+    <div className="min-h-[99vh] px-2 py-8 flex flex-col gap-3 items-center">
       <div>
-        <h2 className="text-5xl font-bold">Oops!</h2>
+        <h2 className="text-6xl font-bold">Oops!</h2>
         <p className="text-muted-foreground">Something went wrong!</p>
       </div>
       <Button

@@ -10,25 +10,27 @@ import { SheetClose } from "@/components/ui/sheet";
 
 export const NAVLINKS = [
   {
-    title: "Documentation",
-    href: `/docs/${page_routes[0].href}`,
+    title: "Home",
+    href: "/",
   },
   {
-    title: "Examples",
-    href: "#",
+    title: "Categories",
+    href:"/categories",
+  },
+
+  {
+    title: "Contact",
+    href: "/contact",
   },
   {
-    title: "Guides",
-    href: "#",
-  },
-  {
-    title: "Community",
-    href: "#",
+    title: "Projects",
+    href: "/project",
   },
   {
     title: "Blog",
-    href: "#",
+    href: `/docs/${page_routes[0].href}`,
   },
+  
 ];
 
 export function Navbar() {
@@ -52,13 +54,13 @@ export function Navbar() {
             <Search />
             <div className="flex">
               <Link
-                href="https://github.com/nisabmohd/Docs-Stater-Template"
+                href="https://github.com/arihantdotcom"
                 className={buttonVariants({ variant: "ghost", size: "icon" })}
               >
                 <GithubIcon className="h-[1.1rem] w-[1.1rem]" />
               </Link>
               <Link
-                href="#"
+                href="https://x.com/Arihantdotcom"
                 className={buttonVariants({
                   variant: "ghost",
                   size: "icon",
@@ -79,7 +81,7 @@ export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2.5">
       <HexagonIcon className="w-7 h-7 text-muted-foreground fill-current" />
-      <h2 className="text-md font-bold">template/docs</h2>
+      <h2 className="text-md font-bold">Blog</h2>
     </Link>
   );
 }
