@@ -6,8 +6,10 @@ import { GeistMono } from "geist/font/mono";
 import { Footer } from "@/components/footer";
 import "./globals.css";
 import { inject } from '@vercel/analytics';
+
 import { Analytics } from "@vercel/analytics/react"
 import { Providers } from "./provider";
+
 export const metadata: Metadata = {
   title: "Arihant's Blog",
   metadataBase: new URL("https://blog.arihant.us"),
