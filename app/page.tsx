@@ -3,6 +3,7 @@ import { page_routes } from "@/lib/routes-config";
 import { Coffee, MoveUpRightIcon, TerminalIcon } from "lucide-react";
 import Link from "next/link";
 
+
 export default function Home() {
   return (
     <div className="flex sm:min-h-[91vh] min-h-[88vh] flex-col items-center justify-center text-center px-2 py-8">
@@ -30,9 +31,11 @@ export default function Home() {
        Buy me a coffee
         </Link>
       </div>
+      <Link href="https://arihant.us">
       <span className="flex flex-row items-center gap-2 text-zinc-400 text-md mt-7 -mb-12 max-[800px]:mb-12">
         <TerminalIcon className="w-4 h-4 mr-1" /> Visit arihant.us
       </span>
+      </Link>
     </div>
   );
 }

@@ -1,12 +1,15 @@
+"use client"
 import { ModeToggle } from "@/components/theme-toggle";
 import { GithubIcon, TwitterIcon, HexagonIcon } from "lucide-react";
 import Link from "next/link";
-import { buttonVariants } from "./ui/button";
-import Search from "./search";
+import { Button, buttonVariants } from "./ui/button";
+
 import Anchor from "./anchor";
 import { SheetLeftbar } from "./leftbar";
 import { page_routes } from "@/lib/routes-config";
 import { SheetClose } from "@/components/ui/sheet";
+import { useSession, signIn, signOut } from "next-auth/react"
+import AuthButton from "./authbtn";
 
 export const NAVLINKS = [
   {
@@ -34,6 +37,10 @@ export const NAVLINKS = [
 ];
 
 export function Navbar() {
+ 
+
+   
+
   return (
     <nav className="w-full border-b h-16 sticky top-0 z-50 lg:px-4 px-2 backdrop-filter backdrop-blur-xl bg-opacity-5">
       <div className="sm:p-3 p-2 max-w-[1530px] mx-auto h-full flex items-center justify-between gap-2">
@@ -51,7 +58,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2">
-            <Search />
+            <AuthButton/>
             <div className="flex">
               <Link
                 href="https://github.com/arihantdotcom"
