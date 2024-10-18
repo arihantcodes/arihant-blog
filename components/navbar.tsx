@@ -1,46 +1,41 @@
-"use client"
+"use client";
 import { ModeToggle } from "@/components/theme-toggle";
-import { GithubIcon, TwitterIcon, HexagonIcon } from "lucide-react";
+
 import Link from "next/link";
 import { Button, buttonVariants } from "./ui/button";
-
+import { Icons } from "./icon";
 import Anchor from "./anchor";
 import { SheetLeftbar } from "./leftbar";
 import { page_routes } from "@/lib/routes-config";
 import { SheetClose } from "@/components/ui/sheet";
-import { useSession, signIn, signOut } from "next-auth/react"
-import AuthButton from "./authbtn";
+
+import Search from "./search";
 
 export const NAVLINKS = [
   {
-    title: "Home",
-    href: "/",
+    title: "Docs",
+    href: "/docs",
   },
   {
-    title: "Categories",
-    href:"/categories",
+    title: "Components",
+    href: "/components",
   },
 
   {
-    title: "Contact",
-    href: "/contact",
+    title: "Examples",
+    href: "/example",
   },
   {
-    title: "Projects",
-    href: "/project",
+    title: "Colors",
+    href: "/colors",
   },
   {
     title: "Blog",
     href: `/docs/${page_routes[0].href}`,
   },
-  
 ];
 
 export function Navbar() {
- 
-
-   
-
   return (
     <nav className="w-full border-b h-16 sticky top-0 z-50 lg:px-4 px-2 backdrop-filter backdrop-blur-xl bg-opacity-5">
       <div className="sm:p-3 p-2 max-w-[1530px] mx-auto h-full flex items-center justify-between gap-2">
@@ -58,22 +53,22 @@ export function Navbar() {
 
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2">
-            <AuthButton/>
             <div className="flex">
+              <Search />
               <Link
-                href="https://github.com/arihantdotcom"
+                href="https://github.com/arihantcodes"
                 className={buttonVariants({ variant: "ghost", size: "icon" })}
               >
-                <GithubIcon className="h-[1.1rem] w-[1.1rem]" />
+                <Icons.gitHub className="icon-class w-4" />
               </Link>
               <Link
-                href="https://x.com/Arihantdotcom"
+                href="https://x.com/arihantcodes"
                 className={buttonVariants({
                   variant: "ghost",
                   size: "icon",
                 })}
               >
-                <TwitterIcon className="h-[1.1rem] w-[1.1rem]" />
+                <Icons.twitter className="icon-class w-3" />
               </Link>
               <ModeToggle />
             </div>
@@ -87,8 +82,7 @@ export function Navbar() {
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2.5">
-      <HexagonIcon className="w-7 h-7 text-muted-foreground fill-current" />
-      <h2 className="text-md font-bold">Blog</h2>
+      <h2 className="text-md font-bold">Spectrum/ui</h2>
     </Link>
   );
 }
