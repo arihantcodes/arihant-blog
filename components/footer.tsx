@@ -24,7 +24,7 @@ export function Footer() {
         </div>
       <div>
         <p>
-        © 2024 All rights reserved
+        © 2024-25 All rights reserved
         </p>
       </div>
         <div className="gap-4 items-center hidden md:flex">

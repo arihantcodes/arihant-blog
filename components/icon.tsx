@@ -1,33 +1,8 @@
+"use client"
 type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
-  logo: (props: IconProps) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" {...props}>
-      <rect width="256" height="256" fill="none" />
-      <line
-        x1="208"
-        y1="128"
-        x2="128"
-        y2="208"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="16"
-      />
-      <line
-        x1="192"
-        y1="40"
-        x2="40"
-        y2="192"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="16"
-      />
-    </svg>
-  ),
+ 
   twitter: (props: IconProps) => (
     <svg
       {...props}
@@ -82,14 +57,7 @@ export const Icons = {
       />
     </svg>
   ),
-  pnpm: (props: IconProps) => (
-    <svg viewBox="0 0 24 24" {...props}>
-      <path
-        d="M0 0v7.5h7.5V0zm8.25 0v7.5h7.498V0zm8.25 0v7.5H24V0zM8.25 8.25v7.5h7.498v-7.5zm8.25 0v7.5H24v-7.5zM0 16.5V24h7.5v-7.5zm8.25 0V24h7.498v-7.5zm8.25 0V24H24v-7.5z"
-        fill="currentColor"
-      />
-    </svg>
-  ),
+  
   react: (props: IconProps) => (
     <svg viewBox="0 0 24 24" {...props}>
       <path
